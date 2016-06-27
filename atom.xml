@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leiyantianji.github.io/"/>
-  <updated>2016-06-27T13:48:05.000Z</updated>
+  <updated>2016-06-27T14:19:36.000Z</updated>
   <id>http://leiyantianji.github.io/</id>
   
   <author>
@@ -16,68 +16,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>第一篇</title>
-    <link href="http://leiyantianji.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
-    <id>http://leiyantianji.github.io/posts/第一篇/</id>
-    <published>2016-06-27T13:46:42.000Z</published>
-    <updated>2016-06-27T13:48:05.000Z</updated>
+    <title>Hexo+Github搭建自己的个人博客</title>
+    <link href="http://leiyantianji.github.io/posts/Hexo-Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://leiyantianji.github.io/posts/Hexo-Github搭建自己的个人博客/</id>
+    <published>2016-06-27T14:10:09.000Z</published>
+    <updated>2016-06-27T14:19:36.000Z</updated>
     
-    <content type="html">&lt;p&gt;都不晓得文件在哪，不能手动管理真的心虚&lt;br&gt;这篇再看看&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.qinglinyi.com/posts/build-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.qinglinyi.com/posts/build-blog/  部署github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/fd878edb95e7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/fd878edb95e7        域名&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jinyanhuan.github.io/2015/03/16/hexo-bulid-three/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jinyanhuan.github.io/2015/03/16/hexo-bulid-three/    更换主题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ibruce.info/2013/11/22/hexo-your-blog/    生成文章&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/leiyantianji/others/blob/master/wolfSmall.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/leiyantianji/others/blob/master/wolfSmall.jpg        头像&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ibruce.info/2013/11/22/hexo-your-blog/        详细介绍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://liwangadd.github.io/2015/09/21/markdown%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://liwangadd.github.io/2015/09/21/markdown%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/ markdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://wowubuntu.com/markdown/#link&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wowubuntu.com/markdown/#link markdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.markdown.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.markdown.cn/ markdown官方中文教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jialunliu.com/how-to-build-a-blog-with-hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jialunliu.com/how-to-build-a-blog-with-hexo/    hexo使用&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;都不晓得文件在哪，不能手动管理真的心虚&lt;br&gt;这篇再看看&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>index</title>
-    <link href="http://leiyantianji.github.io/posts/index/"/>
-    <id>http://leiyantianji.github.io/posts/index/</id>
-    <published>2016-06-27T13:39:47.000Z</published>
-    <updated>2016-06-27T13:43:03.000Z</updated>
-    
-    <content type="html">&lt;pre&gt;&lt;code&gt;练手试试
-都不晓得是个什么鬼效果
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;pre&gt;&lt;code&gt;练手试试
-都不晓得是个什么鬼效果
-&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://leiyantianji.github.io/posts/hello-world/"/>
-    <id>http://leiyantianji.github.io/posts/hello-world/</id>
-    <published>2016-06-26T09:06:33.000Z</published>
-    <updated>2016-06-26T09:06:33.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;&lt;a href=&quot;http://www.qinglinyi.com/posts/build-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.qinglinyi.com/posts/build-blog/  部署github&lt;
     
     </summary>
     
