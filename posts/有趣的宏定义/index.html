@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END取消pointer is miss">
 NS_REQUIRES_SUPER在自定义的方法后面加上这个, 其子类在重写这个方法时候, 必须调用父类的这个方法, 不然会警告或者直接报错.
 
 NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END取消pointer is miss">
-<meta property="og:updated_time" content="2016-06-27T15:19:32.000Z">
+<meta property="og:updated_time" content="2016-06-27T15:37:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些有趣的宏定义">
 <meta name="twitter:description" content="__deprecated_msg-(void)function;__deprecated_msg(“这是一个废弃的方法”)
@@ -89,7 +89,7 @@ NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END取消pointer is miss">
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -239,9 +239,9 @@ NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END取消pointer is miss">
 </li>
 <li><p>NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END<br>取消pointer is missing a nullability type specifier(_Nonnull, _Nullable, or _Null_unspecified)警告</p>
 </li>
-<li><p>ifdef DEBUG<br>define NSLog(format, …) NSLog((@”%s-%d:” format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)<br>else<br>define NSLog(FORMAT, …) fprintf(stderr,”%s:%d\t%s\n”,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);<br>endif<br>用于定位log的位置，后者可以去掉时间显示</p>
+<li><p>#ifdef DEBUG<br>#define NSLog(format, …) NSLog((@”%s-%d:” format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)<br>#else<br>\define NSLog(FORMAT, …) fprintf(stderr,”%s:%d\t%s\n”,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);<br>#endif<br>用于定位log的位置，后者可以去掉时间显示</p>
 </li>
-<li><p>ifdef Test<br>  doSomeThing;<br>#endif<br>在target的Preprocessor Macros中定义，可以用来build多个不同功能的target</p>
+<li><p>#ifdef Test<br>  doSomeThing;<br>#endif<br>在target的Preprocessor Macros中定义，可以用来build多个不同功能的target</p>
 </li>
 </ol>
 

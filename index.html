@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -224,9 +224,9 @@
 </li>
 <li><p>NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END<br>取消pointer is missing a nullability type specifier(_Nonnull, _Nullable, or _Null_unspecified)警告</p>
 </li>
-<li><p>ifdef DEBUG<br>define NSLog(format, …) NSLog((@”%s-%d:” format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)<br>else<br>define NSLog(FORMAT, …) fprintf(stderr,”%s:%d\t%s\n”,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);<br>endif<br>用于定位log的位置，后者可以去掉时间显示</p>
+<li><p>#ifdef DEBUG<br>#define NSLog(format, …) NSLog((@”%s-%d:” format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)<br>#else<br>\define NSLog(FORMAT, …) fprintf(stderr,”%s:%d\t%s\n”,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);<br>#endif<br>用于定位log的位置，后者可以去掉时间显示</p>
 </li>
-<li><p>ifdef Test<br>  doSomeThing;<br>#endif<br>在target的Preprocessor Macros中定义，可以用来build多个不同功能的target</p>
+<li><p>#ifdef Test<br>  doSomeThing;<br>#endif<br>在target的Preprocessor Macros中定义，可以用来build多个不同功能的target</p>
 </li>
 </ol>
 

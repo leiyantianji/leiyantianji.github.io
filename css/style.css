@@ -325,12 +325,12 @@ a {
     float: right;
   }
   #container #viewer-box .viewer-box-l {
-    font-size: 14px;
+    font-size: 16px;
   }
   #container .article {
     padding: 10px;
     margin: 10px;
-    font-size: 14px;
+    font-size: 16px;
   }
   #container .article .article-entry {
     padding-left: 0;
@@ -350,7 +350,7 @@ a {
     position: ralative;
   }
   #container .article .article-meta .article-date {
-    font-size: 12px;
+    font-size: 16px;
     -webkit-border-radius: 0;
     border-radius: 0;
     color: #666;
@@ -439,7 +439,7 @@ a {
     padding: 10px;
   }
   #container .archives-wrap .archive-article-title {
-    font-size: 14px;
+    font-size: 15px;
   }
   #container .archives-wrap .archive-year-wrap {
     position: relative;
@@ -449,12 +449,12 @@ a {
     padding: 0 0 0 0;
   }
   #container .archives-wrap .article-meta .archive-article-date {
-    font-size: 12px;
+    font-size: 16px;
     margin-right: 10px;
     margin-top: -5px;
   }
   #container .archives-wrap .article-meta .article-tag-list-link {
-    font-size: 12px;
+    font-size: 16px;
   }
   #container .archives .archive-article {
     padding: 10px 0;
@@ -522,7 +522,7 @@ a {
 #header .header-subtitle {
   text-align: center;
   color: #999;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 25px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -548,7 +548,7 @@ a {
   cursor: default;
 }
 #header .header-menu li a {
-  font-size: 14px;
+  font-size: 16px;
   min-width: 300px;
 }
 #header .switch-area {
@@ -556,7 +556,7 @@ a {
   width: 100%;
   overflow: hidden;
   min-height: 500px;
-  font-size: 14px;
+  font-size: 16px;
 }
 #header .switch-area .switch-wrap {
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -1672,7 +1672,7 @@ pre .css ~ * .id {
   display: inline-block;
   color: #fff;
   line-height: 20px;
-  font-size: 12px;
+  font-size: 16px;
   margin: 0 3px 30px;
 }
 #page-nav .page-number:hover {
@@ -1830,7 +1830,7 @@ pre .css ~ * .id {
 .switch-btn .tips-box .tips-inner li {
   padding: 4px 0;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 16px;
   color: #ddd;
 }
 .switch-btn .tips-box .tips-inner li:hover {
@@ -2034,7 +2034,7 @@ pre .css ~ * .id {
   display: inline-block;
   text-decoration: none;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 15px;
   color: #fff;
   height: 18px;
   line-height: 18px;
