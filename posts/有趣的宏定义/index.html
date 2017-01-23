@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://leiyantianji.github.io/posts/有趣的宏定义/index.html">
 <meta property="og:site_name" content="蜀山之雷炎">
 <meta property="og:description" content="一些有趣的宏定义，可用可不用">
-<meta property="og:updated_time" content="2016-08-25T07:31:59.000Z">
+<meta property="og:updated_time" content="2017-01-23T12:28:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些有趣的宏定义">
 <meta name="twitter:description" content="一些有趣的宏定义，可用可不用">
@@ -233,9 +233,7 @@
 <li><p>#ifdef Test<br>  doSomeThing;<br>#endif<br>在target的Preprocessor Macros中定义，可以用来build多个不同功能的target</p>
 </li>
 </ol>
-<p>6.\\</p>
-<p>#define LYWeakSelf(type)  __weak typeof(type) weak##type = type;</p>
-<p>#define LYStrongSelf(type)  __strong typeof(type) type = weak##type;<br>\\</p>
+<p>6.strong\weak宏定义<br># define LYWeakSelf(type)  __weak typeof(type) weak##type = type;<br># define LYStrongSelf(type)  __strong typeof(type) type = weak##type;</p>
 
       
     </div>
