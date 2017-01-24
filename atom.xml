@@ -224,23 +224,9 @@ description: 附加一段文章摘要，字数最好在140字以内。
     <link href="http://leiyantianji.github.io/posts/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%AE%8F%E5%AE%9A%E4%B9%89/"/>
     <id>http://leiyantianji.github.io/posts/有趣的宏定义/</id>
     <published>2016-06-27T14:56:39.000Z</published>
-    <updated>2017-01-23T12:28:46.000Z</updated>
+    <updated>2017-01-24T05:49:56.000Z</updated>
     
-    <content type="html">&lt;ol&gt;
-&lt;li&gt;__deprecated_msg&lt;br&gt;-(void)function __deprecated_msg(“这是一个废弃的方法”);&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;NS_REQUIRES_SUPER&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;在自定义的方法后面加上这个, 其子类在重写这个方法时候, 必须调用父类的这个方法, 不然会警告或者直接报错.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END&lt;br&gt;取消pointer is missing a nullability type specifier(_Nonnull, _Nullable, or _Null_unspecified)警告&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;#ifdef DEBUG&lt;br&gt;#define NSLog(format, …) NSLog((@”%s-%d:” format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)&lt;br&gt;#else&lt;br&gt;#define NSLog(FORMAT, …) fprintf(stderr,”%s:%d\t%s\n”,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);&lt;br&gt;#endif&lt;br&gt;用于定位log的位置，后者可以去掉时间显示&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;#ifdef Test&lt;br&gt;  doSomeThing;&lt;br&gt;#endif&lt;br&gt;在target的Preprocessor Macros中定义，可以用来build多个不同功能的target&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;6.strong\weak宏定义&lt;br&gt;# define LYWeakSelf(type)  __weak typeof(type) weak##type = type;&lt;br&gt;# define LYStrongSelf(type)  __strong typeof(type) type = weak##type;&lt;/p&gt;
-</content>
+    <content type="html">&lt;font size=&quot;4&quot;&gt;1. __deprecated_msg&lt;br&gt;-(void)function __deprecated_msg(“这是一个废弃的方法”);&lt;br&gt;&lt;br&gt;2. NS_REQUIRES_SUPER&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;在自定义的方法后面加上这个, 其子类在重写这个方法时候, 必须调用父类的这个方法, 不然会警告或者直接报错.&lt;br&gt;&lt;br&gt;3. NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END&lt;br&gt;取消pointer is missing a nullability type specifier(_Nonnull, _Nullable, or _Null_unspecified)警告&lt;br&gt;&lt;br&gt;4. #ifdef DEBUG&lt;br&gt;#define NSLog(format, …) NSLog((@”%s-%d:” format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)&lt;br&gt;#else&lt;br&gt;#define NSLog(FORMAT, …) fprintf(stderr,”%s:%d\t%s\n”,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);&lt;br&gt;#endif&lt;br&gt;用于定位log的位置，后者可以去掉时间显示&lt;br&gt;&lt;br&gt;5. #ifdef Test&lt;br&gt;     doSomeThing;&lt;br&gt;   #endif&lt;br&gt;在target的Preprocessor Macros中定义，可以用来build多个不同功能的target&lt;br&gt;&lt;br&gt;6.strong\weak宏定义&lt;br&gt;# define LYWeakSelf(type)  __weak typeof(type) weak##type = type;&lt;br&gt;# define LYStrongSelf(type)  __strong typeof(type) type = weak##type;&lt;/font&gt;</content>
     
     <summary type="html">
     
@@ -251,8 +237,6 @@ description: 附加一段文章摘要，字数最好在140字以内。
       <category term="iOS开发" scheme="http://leiyantianji.github.io/categories/iOS%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="iOS开发" scheme="http://leiyantianji.github.io/tags/iOS%E5%BC%80%E5%8F%91/"/>
-    
       <category term="宏定义" scheme="http://leiyantianji.github.io/tags/%E5%AE%8F%E5%AE%9A%E4%B9%89/"/>
     
   </entry>
@@ -262,7 +246,7 @@ description: 附加一段文章摘要，字数最好在140字以内。
     <link href="http://leiyantianji.github.io/posts/Hexo-Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://leiyantianji.github.io/posts/Hexo-Github搭建自己的个人博客/</id>
     <published>2016-06-27T14:10:09.000Z</published>
-    <updated>2017-01-23T12:09:39.000Z</updated>
+    <updated>2017-01-24T04:13:14.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.qinglinyi.com/posts/build-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.qinglinyi.com/posts/build-blog/  部署github&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/fd878edb95e7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/fd878edb95e7      域名&lt;/a&gt;&lt;/p&gt;
@@ -274,8 +258,10 @@ description: 附加一段文章摘要，字数最好在140字以内。
 &lt;p&gt;&lt;a href=&quot;http://wowubuntu.com/markdown/#link&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wowubuntu.com/markdown/#link markdown&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.markdown.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.markdown.cn/ markdown官方中文教程&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://jialunliu.com/how-to-build-a-blog-with-hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jialunliu.com/how-to-build-a-blog-with-hexo/    hexo使用&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://tengj.top/2016/03/06/hexo%E5%B9%B2%E8%B4%A7%E7%B3%BB%E5%88%97%EF%BC%9A%EF%BC%88%E4%B8%89%EF%BC%89hexo%E7%9A%84Jacman%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://tengj.top/2016/03/06/ 主题自定义&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://wkcole.github.io/2016/02/21/Hexo%E4%B8%BB%E9%A2%98%E8%BF%9B%E9%98%B6-yilia.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://wkcole.github.io/2016/02/21/   Hexo主题进阶-yilia&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://cthgj.me/2015/05/13/Markdown%E6%A0%BC%E5%BC%8F/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://cthgj.me/2015/05/13/Markdown%E6%A0%BC%E5%BC%8F/  markdown示例&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tengj.top/2016/03/06/hexo%E5%B9%B2%E8%B4%A7%E7%B3%BB%E5%88%97%EF%BC%9A%EF%BC%88%E4%B8%89%EF%BC%89hexo%E7%9A%84Jacman%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://tengj.top/2016/03/06/ 主题自定义&lt;/a&gt;、&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wkcole.github.io/2016/02/21/Hexo%E4%B8%BB%E9%A2%98%E8%BF%9B%E9%98%B6-yilia.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://wkcole.github.io/2016/02/21/   Hexo主题进阶-yilia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cthgj.me/2015/05/13/Markdown%E6%A0%BC%E5%BC%8F/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://cthgj.me/2015/05/13/Markdown%E6%A0%BC%E5%BC%8F/  markdown示例&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前集成了多说评论，不蒜子访问统计。功能差不多了，哈哈哈&lt;br&gt;说个坑：hexo生成文章后，文章标签的css不对！！！请来大神分析问题，后来发现是js文件引入的问题。文章标签通过main.js动态改变的，main.js执行需要另一个min.js文件。不巧的是min.js用的是http，在github没能生效。导致样式无法正确生成。&lt;br&gt;解决办法：把那个min.js缓存到本地，修改配置文件，从本地引用，万事大吉！&lt;/p&gt;
 </content>
     
     <summary type="html">

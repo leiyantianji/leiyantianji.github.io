@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://leiyantianji.github.io/posts/有趣的宏定义/index.html">
 <meta property="og:site_name" content="蜀山之雷炎">
 <meta property="og:description" content="一些有趣的宏定义，可用可不用">
-<meta property="og:updated_time" content="2017-01-23T12:28:46.000Z">
+<meta property="og:updated_time" content="2017-01-24T05:49:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些有趣的宏定义">
 <meta name="twitter:description" content="一些有趣的宏定义，可用可不用">
@@ -115,7 +115,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/blog搭建/" style="font-size: 10px;">blog搭建</a> <a href="/tags/iOS开发/" style="font-size: 10px;">iOS开发</a> <a href="/tags/markdown笔记/" style="font-size: 10px;">markdown笔记</a> <a href="/tags/宏定义/" style="font-size: 10px;">宏定义</a>
+						<a href="/tags/blog搭建/" style="font-size: 10px;">blog搭建</a> <a href="/tags/markdown笔记/" style="font-size: 10px;">markdown笔记</a> <a href="/tags/宏定义/" style="font-size: 10px;">宏定义</a>
 					</div>
 				</section>
 				
@@ -213,7 +213,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS开发/">iOS开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/宏定义/">宏定义</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/宏定义/">宏定义</a></li></ul>
 	</div>
 
         
@@ -228,21 +228,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>__deprecated_msg<br>-(void)function __deprecated_msg(“这是一个废弃的方法”);</li>
-<li><p>NS_REQUIRES_SUPER</p>
-<a id="more"></a>
-<p>在自定义的方法后面加上这个, 其子类在重写这个方法时候, 必须调用父类的这个方法, 不然会警告或者直接报错.</p>
-</li>
-<li><p>NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END<br>取消pointer is missing a nullability type specifier(_Nonnull, _Nullable, or _Null_unspecified)警告</p>
-</li>
-<li><p>#ifdef DEBUG<br>#define NSLog(format, …) NSLog((@”%s-%d:” format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)<br>#else<br>#define NSLog(FORMAT, …) fprintf(stderr,”%s:%d\t%s\n”,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);<br>#endif<br>用于定位log的位置，后者可以去掉时间显示</p>
-</li>
-<li><p>#ifdef Test<br>  doSomeThing;<br>#endif<br>在target的Preprocessor Macros中定义，可以用来build多个不同功能的target</p>
-</li>
-</ol>
-<p>6.strong\weak宏定义<br># define LYWeakSelf(type)  __weak typeof(type) weak##type = type;<br># define LYStrongSelf(type)  __strong typeof(type) type = weak##type;</p>
-
+        <font size="4">1. __deprecated_msg<br>-(void)function __deprecated_msg(“这是一个废弃的方法”);<br><br>2. NS_REQUIRES_SUPER<br><a id="more"></a>在自定义的方法后面加上这个, 其子类在重写这个方法时候, 必须调用父类的这个方法, 不然会警告或者直接报错.<br><br>3. NS_ASSUME_NONNULL_BEGIN + NS_ASSUME_NONNULL_END<br>取消pointer is missing a nullability type specifier(_Nonnull, _Nullable, or _Null_unspecified)警告<br><br>4. #ifdef DEBUG<br>#define NSLog(format, …) NSLog((@”%s-%d:” format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)<br>#else<br>#define NSLog(FORMAT, …) fprintf(stderr,”%s:%d\t%s\n”,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);<br>#endif<br>用于定位log的位置，后者可以去掉时间显示<br><br>5. #ifdef Test<br>     doSomeThing;<br>   #endif<br>在target的Preprocessor Macros中定义，可以用来build多个不同功能的target<br><br>6.strong\weak宏定义<br># define LYWeakSelf(type)  __weak typeof(type) weak##type = type;<br># define LYStrongSelf(type)  __strong typeof(type) type = weak##type;</font>
       
     </div>
     
