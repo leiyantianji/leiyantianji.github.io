@@ -63,17 +63,16 @@
     <link href="http://leiyantianji.github.io/posts/Markdown%E6%A0%BC%E5%BC%8F/"/>
     <id>http://leiyantianji.github.io/posts/Markdown格式/</id>
     <published>2016-07-05T08:14:12.000Z</published>
-    <updated>2017-01-25T07:51:37.000Z</updated>
+    <updated>2017-01-25T07:57:39.000Z</updated>
     
     <content type="html">&lt;p&gt;没怎么用过markdown，记录爬坑过程。&lt;/p&gt;
-&lt;h1 id=&quot;1-标题&quot;&gt;&lt;a href=&quot;#1-标题&quot; class=&quot;headerlink&quot; title=&quot;1.标题&quot;&gt;&lt;/a&gt;1.标题&lt;/h1&gt;&lt;p&gt;Markdown中，只需要在文本前面加上 # 即可，同理、还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加 # 即可，标题字号相应降低。例如：&lt;/p&gt;
+&lt;h1 id=&quot;1-标题&quot;&gt;&lt;a href=&quot;#1-标题&quot; class=&quot;headerlink&quot; title=&quot;1.标题&quot;&gt;&lt;/a&gt;1.标题&lt;/h1&gt;&lt;p&gt;Markdown中，只需要在文本前面加上 # 即可，同理、还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加 # 即可，标题字号相应降低。例如：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;# 一级标题
 ## 二级标题
 。。。
 ##### 五级标题
 ###### 六级标题
-&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;效果是这样的：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;效果是这样的：&lt;/p&gt;
 &lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;&gt;&lt;/a&gt;一级标题&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a&gt;二级标题&lt;/h2&gt;&lt;p&gt;。。。&lt;/p&gt;
 &lt;h5 id=&quot;五级标题&quot;&gt;&lt;a href=&quot;#五级标题&quot; class=&quot;headerlink&quot; title=&quot;五级标题&quot;&gt;&lt;/a&gt;五级标题&lt;/h5&gt;&lt;h6 id=&quot;六级标题&quot;&gt;&lt;a href=&quot;#六级标题&quot; class=&quot;headerlink&quot; title=&quot;六级标题&quot;&gt;&lt;/a&gt;六级标题&lt;/h6&gt;&lt;p&gt;也可以用&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;大标题
