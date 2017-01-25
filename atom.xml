@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leiyantianji.github.io/"/>
-  <updated>2017-01-24T06:25:24.000Z</updated>
+  <updated>2017-01-25T07:40:55.000Z</updated>
   <id>http://leiyantianji.github.io/</id>
   
   <author>
@@ -16,11 +16,53 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>科学上网</title>
+    <link href="http://leiyantianji.github.io/posts/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    <id>http://leiyantianji.github.io/posts/科学上网/</id>
+    <published>2017-01-24T06:51:25.000Z</published>
+    <updated>2017-01-25T07:40:55.000Z</updated>
+    
+    <content type="html">&lt;p&gt;话说天朝上网是可以的，但也只比三胖的国度好那么一点点。于是本人开始苦苦寻找正确的上网姿势&lt;/p&gt;
+&lt;h2 id=&quot;修改hosts&quot;&gt;&lt;a href=&quot;#修改hosts&quot; class=&quot;headerlink&quot; title=&quot;修改hosts&quot;&gt;&lt;/a&gt;&lt;strong&gt;修改hosts&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;最简单的办法，最笨的办法。具体怎么做就不说了，贴几个收藏的网站&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://laod.cn/hosts/2016-google-hosts.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;老D博客：持续更新，非常靠谱的一个人。一开始就靠他，上了谷歌&lt;/a&gt;&lt;br&gt;原先还有利器–HostsTool，后来被hexie了。下面的host，好像除了第一个，都有点不靠谱，很快就失效了&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://htcui.com/4938.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;手机发烧友：持续更新，用的比较少&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/racaljk/hosts/blob/master/hosts&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github上的host文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ladder1984/updateHosts/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github上的host更新工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ladder1984/someHosts&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github上的host汇总&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;自己动手，丰衣足食。使用工具爬墙，不当原始人&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ttt.tt/150/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Shadowsocks：科学上网工具，目前自己在用。下面会画重点&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.shadark.com/2017/01/08/build-vpn-on-vps/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在VPS上搭建VPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.banwagong.me/38.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;搬瓦工VPS安装FinalSpeed加速工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/a50f20dedcc5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;FinalSpeed安装-简书&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;很悲伤的说，上面是还生效的。比开始收藏的总量，少了很多很多。希望这篇文章能活久一点&lt;br&gt;第一步：找地基，扎实开干。我选择是&lt;a href=&quot;https://bandwagonhost.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;搬瓦工-墙外官网&lt;/a&gt;，打不开的请使用&lt;a href=&quot;https://bwh1.net/clientarea.php?action=products&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;搬瓦工-墙内官网&lt;/a&gt;，当时用支付宝买的$12。诚实的说，是看在可以用支付宝，其他支付方式不会。具体购买流程可以参考&lt;a href=&quot;http://banwagong.cn/gonglue.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;新手用户搬瓦工VPS购买图文指导教程&lt;/a&gt;，不再复述，请按图索骥。最后提醒一下，尽早买套餐，因为实惠的套餐很快就会被抢光的&lt;br&gt;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;土豪也可以买现房，省心省力，&lt;a href=&quot;https://www.express-vpn.store/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;express-vpn&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;第二步：搭房子，具体步骤可以参考&lt;a href=&quot;http://blog.shadark.com/2017/01/08/build-vpn-on-vps/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在VPS上搭建VPN&lt;/a&gt;。总体来说，菜鸟(wo)跟着步骤做就行了。&lt;br&gt;本人使用的是shadowsocks，所以不需要参考。本人步骤(很久前操作的，好像很顺溜)：打开搬瓦工的控制面板，具体步骤如图&lt;img src=&quot;https://raw.githubusercontent.com/leiyantianji/leiyantianji.github.io/master/img/banwagong.jpg&quot; alt=&quot;控制面板路径&quot;&gt;里面会提示你安装什么系统，对比过后，我选择了Centos 6 x86_64。装好系统后，然后左下角有Shadowsocks Server，一键安装好就行了。没有&lt;a href=&quot;http://blog.shadark.com/2017/01/08/build-vpn-on-vps/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在VPS上搭建VPN&lt;/a&gt;中的那么繁琐，蹭蹭蹭的弄好。如果在控制面板弄好后，用不了。就老实跟着&lt;a href=&quot;http://blog.shadark.com/2017/01/08/build-vpn-on-vps/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在VPS上搭建VPN&lt;/a&gt;步骤弄吧，成功才是王道。&lt;/p&gt;
+&lt;p&gt;第三步：入住，使用shadowsocks连接服务器。那么问题来了，&lt;del&gt;挖掘机技术哪家强&lt;/del&gt;shadowsocks哪来。先改hosts翻过来找找，还是有蛮多资源。不翻，我贴了&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-iOS/releases/download/2.6.3/ShadowsocksX-2.6.3.dmg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;链接&lt;/a&gt;也下不下来。目前还没找到开源可用的iOS代码(原谅我个编译不通过的渣渣)，&lt;a href=&quot;https://itunes.apple.com/cn/app/shadowrocket-for-shadowsocks/id932747118&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;appleStore中有卖&lt;/a&gt;。&lt;a href=&quot;https://itunes.apple.com/cn/app/wingy-proxy-for-http-s-socks5/id1178584911?mt=8&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;有好心人上了个免费的&lt;/a&gt;，鉴于不开源，我都没使用。反正主要是工作需要，电脑能用就好。如果有开源能(bianyi)用(tongguo)，麻烦告知小弟，多谢多谢。&lt;/p&gt;
+&lt;p&gt;目前我也只弄到这步，刚好够用。没花多少功夫继续折腾了，有兴趣的可以试试&lt;a href=&quot;http://www.jianshu.com/p/a50f20dedcc5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安装FinalSpeed加速工具&lt;/a&gt;。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      记录上网的艰辛历程
+    
+    </summary>
+    
+      <category term="blog准备工作" scheme="http://leiyantianji.github.io/categories/blog%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+      <category term="科学上网" scheme="http://leiyantianji.github.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown格式</title>
     <link href="http://leiyantianji.github.io/posts/Markdown%E6%A0%BC%E5%BC%8F/"/>
     <id>http://leiyantianji.github.io/posts/Markdown格式/</id>
     <published>2016-07-05T08:14:12.000Z</published>
-    <updated>2017-01-24T06:25:24.000Z</updated>
+    <updated>2017-01-25T06:44:56.000Z</updated>
     
     <content type="html">&lt;p&gt;没怎么用过markdown，记录爬坑过程。&lt;/p&gt;
 &lt;h1 id=&quot;1-标题&quot;&gt;&lt;a href=&quot;#1-标题&quot; class=&quot;headerlink&quot; title=&quot;1.标题&quot;&gt;&lt;/a&gt;1.标题&lt;/h1&gt;&lt;p&gt;Markdown中，只需要在文本前面加上 # 即可，同理、还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加 # 即可，标题字号相应降低。例如：&lt;/p&gt;
@@ -47,7 +89,7 @@
 &lt;li&gt;&lt;strong&gt;列表&lt;/strong&gt; （有序、无序、嵌套）&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;表格&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;font size=&quot;5&quot;&gt;文字、&lt;strong&gt;加粗&lt;/strong&gt;、&lt;em&gt;斜体&lt;/em&gt;、&lt;del&gt;删除&lt;/del&gt;、&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;、&lt;font color=&quot;#0099ff&quot; face=&quot;黑体&quot;&gt;#0099ff&lt;/font&gt;、&lt;font color=&quot;#00ffff&quot;&gt;#00ffff&lt;/font&gt;、&lt;font color=&quot;gray&quot;&gt;gray&lt;/font&gt;、&lt;font size=&quot;2&quot;&gt;大小比例为2&lt;/font&gt;、&lt;font size=&quot;7&quot;&gt;大小为7&lt;/font&gt;、&lt;font color=&quot;“green”&quot;&gt;颜色&lt;/font&gt;、分割线、段落&lt;/font&gt;
+&lt;li&gt;&lt;font size=&quot;5&quot;&gt;文字、&lt;strong&gt;加粗&lt;/strong&gt;、_斜体_、~~删除~~、&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;、&lt;font color=&quot;#0099ff&quot; face=&quot;黑体&quot;&gt;#0099ff&lt;/font&gt;、&lt;font color=&quot;#00ffff&quot;&gt;#00ffff&lt;/font&gt;、&lt;font color=&quot;gray&quot;&gt;gray&lt;/font&gt;、&lt;font size=&quot;2&quot;&gt;大小比例为2&lt;/font&gt;、&lt;font size=&quot;7&quot;&gt;大小为7&lt;/font&gt;、&lt;font color=&quot;“green”&quot;&gt;颜色&lt;/font&gt;、分割线、段落&lt;/font&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -88,8 +130,7 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 *注：ref其实就类似于写文章中的插入参考文献，先加入文字，再在文末添加references相关信息；
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;效果：&lt;/p&gt;
-&lt;p&gt;这是我的博客地址&lt;a href=&quot;http://cthgj.me&quot; title=&quot;HUGO&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;My_blog&lt;/a&gt;。&lt;br&gt;部分博客内容引用自&lt;a href=&quot;http://equation85.github.io/blog/markdown-examples/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;equation8&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;对于图片的链接，在中括号前加叹号即可。&lt;/p&gt;
+&lt;p&gt;这是我的博客地址&lt;a href=&quot;https://leiyantianji.github.io/&quot;&gt;My_blog&lt;/a&gt;。&lt;br&gt;部分博客内容引用自&lt;a href=&quot;https://leiyantianji.github.io/&quot;&gt;equation8&lt;/a&gt;。&lt;br&gt;对于图片的链接，在中括号前加叹号即可。&lt;/p&gt;
 &lt;h2 id=&quot;注：Markdown不能设置图片大小，如果必须设置则应使用HTML标记。&quot;&gt;&lt;a href=&quot;#注：Markdown不能设置图片大小，如果必须设置则应使用HTML标记。&quot; class=&quot;headerlink&quot; title=&quot;注：Markdown不能设置图片大小，如果必须设置则应使用HTML标记。&quot;&gt;&lt;/a&gt;注：&lt;em&gt;&lt;strong&gt;Markdown&lt;/strong&gt;不能设置图片大小，如果必须设置则应使用&lt;strong&gt;HTML&lt;/strong&gt;标记。&lt;/em&gt;&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;Inline示例：![banner](https://raw.githubusercontent.com/e-tomato/e-tomato.github.io/master/img/banner.jpg)
 Reference示例：![替代文本][pic]
 [pic]:https://raw.githubusercontent.com/e-tomato/e-tomato.github.io/master/img/banner.jpg &amp;quot;可选的title&amp;quot;
@@ -98,7 +139,7 @@ HTML示例：&amp;lt;img src=&amp;quot;https://raw.githubusercontent.com/e-tomat
 &lt;p&gt;效果：&lt;/p&gt;
 &lt;p&gt;Inline示例：&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/e-tomato/e-tomato.github.io/master/img/banner.jpg&quot; alt=&quot;banner&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Reference示例：&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/e-tomato/e-tomato.github.io/master/img/banner.jpg&quot; alt=&quot;banner&quot; title=&quot;可选的title&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML示例：&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/e-tomato/e-tomato.github.io/master/img/banner.jpg&quot; alt=&quot;替代文本&quot; title=&quot;标题文本&quot; width=&quot;200px&quot;&gt;&lt;/p&gt;
+&lt;p&gt;HTML示例：&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/e-tomato/e-tomato.github.io/master/img/banner.jpg&quot; alt=&quot;替代文本&quot; title=&quot;标题文本&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot; title=&quot;+列表&quot;&gt;&lt;/a&gt;+列表&lt;/h1&gt;&lt;p&gt;无序列表使用*、+或-后面加上空格来表示。&lt;br&gt;有序列表使用数字加英文句号加空格表示。例如：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;* Item 1
 * Item 2
@@ -149,28 +190,7 @@ Pipe     | $1
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;效果&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Item&lt;/th&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Computer&lt;/td&gt;
-&lt;td&gt;$1600&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Phone&lt;/td&gt;
-&lt;td&gt;$12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Pipe&lt;/td&gt;
-&lt;td&gt;$1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Item     | Value&lt;br&gt;-——- | —–&lt;br&gt;Computer | $1600&lt;br&gt;Phone    | $12&lt;br&gt;Pipe     | $1&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -204,7 +224,9 @@ categories: example #分类
 tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格
 description: 附加一段文章摘要，字数最好在140字以内。
 ---
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;markdown小技巧&lt;/strong&gt;&lt;br&gt;&amp;emsp;写文章时，我们常常希望能够首行缩进，这时可以在段首加入”&amp;ensp;”来输入一个空格.加入”&amp;emsp;”来输入两个空格。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;插入代码的方式有两种&lt;br&gt;&amp;emsp;在每行代码前加入4个空格或者添加一个制表符（TAB键）&lt;br&gt;&amp;emsp;在代码两侧添加三个反引号 ``` 。&lt;/p&gt;
+</content>
     
     <summary type="html">
     
