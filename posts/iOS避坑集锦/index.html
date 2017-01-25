@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>iOS避坑集锦 | 蜀山之雷炎</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="写写记记，早点跳出iOS这个坑">
+  <meta name="description" content="记录一些不常见的坑，反正我是爬着出来的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS避坑集锦">
 <meta property="og:url" content="http://leiyantianji.github.io/posts/iOS避坑集锦/index.html">
 <meta property="og:site_name" content="蜀山之雷炎">
-<meta property="og:description" content="写写记记，早点跳出iOS这个坑">
-<meta property="og:updated_time" content="2017-01-25T08:10:18.000Z">
+<meta property="og:description" content="记录一些不常见的坑，反正我是爬着出来的">
+<meta property="og:updated_time" content="2017-01-25T09:24:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS避坑集锦">
-<meta name="twitter:description" content="写写记记，早点跳出iOS这个坑">
+<meta name="twitter:description" content="记录一些不常见的坑，反正我是爬着出来的">
   
     <link rel="alternative" href="/atom.xml" title="蜀山之雷炎" type="application/atom+xml">
   
@@ -80,7 +80,7 @@
 						<li>Links</li>
 						
 						
-						<li>自我介绍</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -115,7 +115,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/blog搭建/" style="font-size: 10px;">blog搭建</a> <a href="/tags/markdown笔记/" style="font-size: 10px;">markdown笔记</a> <a href="/tags/宏定义/" style="font-size: 10px;">宏定义</a> <a href="/tags/科学上网/" style="font-size: 10px;">科学上网</a> <a href="/tags/零碎笔记/" style="font-size: 10px;">零碎笔记</a>
+						<a href="/tags/blog搭建/" style="font-size: 10px;">blog搭建</a> <a href="/tags/markdown笔记/" style="font-size: 10px;">markdown笔记</a> <a href="/tags/宏定义/" style="font-size: 10px;">宏定义</a> <a href="/tags/科学上网/" style="font-size: 10px;">科学上网</a> <a href="/tags/零碎笔记/" style="font-size: 20px;">零碎笔记</a>
 					</div>
 				</section>
 				
@@ -212,7 +212,15 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/零碎笔记/">零碎笔记</a></li></ul>
+	</div>
+
         
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/iOS开发/">iOS开发</a>
+	</div>
+
 
         <div class="clearfix"></div>
       </div>
@@ -220,7 +228,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"><a href="#记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧" class="headerlink" title="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"></a>记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧</h2><p><font color="#FF0033">更改navigationViewContorller.viewControllers</font><br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self.navigationController.viewControllers </span>= mutableVCs<span class="comment">;</span></span><br></pre></td></tr></table></figure></p>
+<p>这样写没问题，当时也不会生效。<a id="more"></a>需要立即调用pop/push，来使这行代码生效。<br>不pop/push，将无法改变(刷新)viewControllers。<br><br>  </p>
+<p>xib上有多个UITextField，有时候切换UITextField，会发生<font color="#FF0033">文字往下偏移</font><br>原因不详，解决办法：在xib中先选个边框，代码改成无框的。<br><br></p>
+<p>NSMutableDictionary<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[mutableDic <span class="string">setValue:</span>tradeInfo <span class="string">forKey:</span>tradeSn];<span class="comment">//允许tradeInfo为空</span></span><br><span class="line">[mutableDic <span class="string">setObject:</span>tradeInfo <span class="string">forKey:</span>tradeSn];<span class="comment">//不允许tradeInfo空，空则崩</span></span><br></pre></td></tr></table></figure></p>
+<p>当然咯，2者key都不允许为空<br><br></p>
+<p><font color="#FF0033">UIScrollView内容自动偏移</font><br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">在当前viewController添加</span><br><span class="line"><span class="keyword">self</span>.automaticallyAdjustsScrollViewInsets = <span class="literal">NO</span>;</span><br><span class="line">原因：苹果很“人性化”替开发人员着想，自动调整了ScrollVIew的contentSize，避免被navigation遮挡</span><br></pre></td></tr></table></figure></p>
+<p><br></p>
+<p><font color="#FF0033">Documents/Inbox是系统预留文件夹，不可创建和修改</font><br><br></p>
+<p>Pch文件用的爽，但是项目有<font color="#FF0033">导入c文件</font>可能会报错<br>解决办法：将需要导入的OC类，放到#ifdef __OBJC__    #endif里面<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> testpch</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> testpch</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __OBJC__</span></span><br><span class="line"><span class="meta">#import <span class="string">"VerifyTools.h"</span></span></span><br><span class="line"><span class="meta">#import <span class="string">"CommonUIAlertView.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     

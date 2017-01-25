@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leiyantianji.github.io/"/>
-  <updated>2017-01-25T08:10:18.000Z</updated>
+  <updated>2017-01-25T09:24:06.000Z</updated>
   <id>http://leiyantianji.github.io/</id>
   
   <author>
@@ -20,14 +20,29 @@
     <link href="http://leiyantianji.github.io/posts/iOS%E9%81%BF%E5%9D%91%E9%9B%86%E9%94%A6/"/>
     <id>http://leiyantianji.github.io/posts/iOS避坑集锦/</id>
     <published>2017-01-25T08:10:18.000Z</published>
-    <updated>2017-01-25T08:10:18.000Z</updated>
+    <updated>2017-01-25T09:24:06.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;h2 id=&quot;记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧&quot;&gt;&lt;a href=&quot;#记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧&quot; class=&quot;headerlink&quot; title=&quot;记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧&quot;&gt;&lt;/a&gt;记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧&lt;/h2&gt;&lt;p&gt;&lt;font color=&quot;#FF0033&quot;&gt;更改navigationViewContorller.viewControllers&lt;/font&gt;&lt;br&gt;&lt;figure class=&quot;highlight armasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;self.navigationController.viewControllers &lt;/span&gt;= mutableVCs&lt;span class=&quot;comment&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这样写没问题，当时也不会生效。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;需要立即调用pop/push，来使这行代码生效。&lt;br&gt;不pop/push，将无法改变(刷新)viewControllers。&lt;br&gt;&lt;br&gt;  &lt;/p&gt;
+&lt;p&gt;xib上有多个UITextField，有时候切换UITextField，会发生&lt;font color=&quot;#FF0033&quot;&gt;文字往下偏移&lt;/font&gt;&lt;br&gt;原因不详，解决办法：在xib中先选个边框，代码改成无框的。&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;NSMutableDictionary&lt;br&gt;&lt;figure class=&quot;highlight groovy&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[mutableDic &lt;span class=&quot;string&quot;&gt;setValue:&lt;/span&gt;tradeInfo &lt;span class=&quot;string&quot;&gt;forKey:&lt;/span&gt;tradeSn];&lt;span class=&quot;comment&quot;&gt;//允许tradeInfo为空&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[mutableDic &lt;span class=&quot;string&quot;&gt;setObject:&lt;/span&gt;tradeInfo &lt;span class=&quot;string&quot;&gt;forKey:&lt;/span&gt;tradeSn];&lt;span class=&quot;comment&quot;&gt;//不允许tradeInfo空，空则崩&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;当然咯，2者key都不允许为空&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;#FF0033&quot;&gt;UIScrollView内容自动偏移&lt;/font&gt;&lt;br&gt;&lt;figure class=&quot;highlight objectivec&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;在当前viewController添加&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;self&lt;/span&gt;.automaticallyAdjustsScrollViewInsets = &lt;span class=&quot;literal&quot;&gt;NO&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;原因：苹果很“人性化”替开发人员着想，自动调整了ScrollVIew的contentSize，避免被navigation遮挡&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;#FF0033&quot;&gt;Documents/Inbox是系统预留文件夹，不可创建和修改&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Pch文件用的爽，但是项目有&lt;font color=&quot;#FF0033&quot;&gt;导入c文件&lt;/font&gt;可能会报错&lt;br&gt;解决办法：将需要导入的OC类，放到#ifdef __OBJC__    #endif里面&lt;br&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;ifndef&lt;/span&gt; testpch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;define&lt;/span&gt; testpch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;ifdef&lt;/span&gt; __OBJC__&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#import &lt;span class=&quot;string&quot;&gt;&quot;VerifyTools.h&quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#import &lt;span class=&quot;string&quot;&gt;&quot;CommonUIAlertView.h&quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
     
+      记录一些不常见的坑，反正我是爬着出来的
+    
     </summary>
     
+      <category term="iOS开发" scheme="http://leiyantianji.github.io/categories/iOS%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="零碎笔记" scheme="http://leiyantianji.github.io/tags/%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -125,7 +140,7 @@
     <link href="http://leiyantianji.github.io/posts/Markdown%E6%A0%BC%E5%BC%8F/"/>
     <id>http://leiyantianji.github.io/posts/Markdown格式/</id>
     <published>2016-07-05T08:14:12.000Z</published>
-    <updated>2017-01-25T08:32:06.000Z</updated>
+    <updated>2017-01-25T09:06:17.000Z</updated>
     
     <content type="html">&lt;p&gt;没怎么用过markdown，记录爬坑过程。&lt;/p&gt;
 &lt;h1 id=&quot;1-标题&quot;&gt;&lt;a href=&quot;#1-标题&quot; class=&quot;headerlink&quot; title=&quot;1.标题&quot;&gt;&lt;/a&gt;1.标题&lt;/h1&gt;&lt;p&gt;Markdown中，只需要在文本前面加上 # 即可，同理、还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加 # 即可，标题字号相应降低。例如：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -308,7 +323,7 @@ tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:�
 description: 附加一段文章摘要，字数最好在140字以内。
 ---
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;markdown小技巧&lt;/strong&gt;&lt;br&gt;&amp;emsp;写文章时，我们常常希望能够首行缩进，这时可以在段首加入”&amp;ensp;”来输入一个空格.加入”&amp;emsp;”来输入两个空格。&lt;/p&gt;
-&lt;p&gt;&amp;emsp;插入代码的方式有两种&lt;br&gt;&amp;emsp;在每行代码前加入4个空格或者添加一个制表符（TAB键）&lt;br&gt;&amp;emsp;在代码两侧添加三个反引号 ``` 。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;插入代码的方式有两种&lt;br&gt;&amp;emsp;在每行代码前加入4个空格或者添加一个制表符（TAB键）&lt;br&gt;&amp;emsp;在代码前后行添加三个反引号 ``` 。&lt;/p&gt;
 </content>
     
     <summary type="html">
