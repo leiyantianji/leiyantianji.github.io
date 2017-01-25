@@ -214,7 +214,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"><a href="#记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧" class="headerlink" title="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"></a>记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧</h2><p><font color="#FF0033">更改navigationViewContorller.viewControllers</font><br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self.navigationController.viewControllers </span>= mutableVCs<span class="comment">;</span></span><br></pre></td></tr></table></figure></p>
+        <h2 id="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"><a href="#记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧" class="headerlink" title="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"></a>记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧</h2><p><font color="#FF0033">更改navigationViewContorller.viewControllers</font><br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self</span>.navigationController.viewControllers = mutableVCs;</span><br></pre></td></tr></table></figure></p>
 <p>这样写没问题，当时也不会生效。
       
     </div>

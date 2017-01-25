@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://leiyantianji.github.io/posts/iOS避坑集锦/index.html">
 <meta property="og:site_name" content="蜀山之雷炎">
 <meta property="og:description" content="记录一些不常见的坑，反正我是爬着出来的">
-<meta property="og:updated_time" content="2017-01-25T09:24:06.000Z">
+<meta property="og:updated_time" content="2017-01-25T09:28:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS避坑集锦">
 <meta name="twitter:description" content="记录一些不常见的坑，反正我是爬着出来的">
@@ -228,7 +228,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"><a href="#记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧" class="headerlink" title="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"></a>记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧</h2><p><font color="#FF0033">更改navigationViewContorller.viewControllers</font><br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self.navigationController.viewControllers </span>= mutableVCs<span class="comment">;</span></span><br></pre></td></tr></table></figure></p>
+        <h2 id="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"><a href="#记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧" class="headerlink" title="记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧"></a>记录一些不常见的坑，一入iOS全是坑。大把API隐藏着坑，先记录下自己碰到的吧</h2><p><font color="#FF0033">更改navigationViewContorller.viewControllers</font><br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self</span>.navigationController.viewControllers = mutableVCs;</span><br></pre></td></tr></table></figure></p>
 <p>这样写没问题，当时也不会生效。<a id="more"></a>需要立即调用pop/push，来使这行代码生效。<br>不pop/push，将无法改变(刷新)viewControllers。<br><br>  </p>
 <p>xib上有多个UITextField，有时候切换UITextField，会发生<font color="#FF0033">文字往下偏移</font><br>原因不详，解决办法：在xib中先选个边框，代码改成无框的。<br><br></p>
 <p>NSMutableDictionary<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[mutableDic <span class="string">setValue:</span>tradeInfo <span class="string">forKey:</span>tradeSn];<span class="comment">//允许tradeInfo为空</span></span><br><span class="line">[mutableDic <span class="string">setObject:</span>tradeInfo <span class="string">forKey:</span>tradeSn];<span class="comment">//不允许tradeInfo空，空则崩</span></span><br></pre></td></tr></table></figure></p>
