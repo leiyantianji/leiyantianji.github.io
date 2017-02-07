@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://leiyantianji.github.io/posts/Hexo-Github搭建自己的个人博客/index.html">
 <meta property="og:site_name" content="蜀山之雷炎">
 <meta property="og:description" content="记录搭建blog的过程，暂未记录步奏，详细可见参考链接">
-<meta property="og:updated_time" content="2017-01-24T04:13:14.000Z">
+<meta property="og:updated_time" content="2017-02-06T06:28:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github搭建自己的个人博客">
 <meta name="twitter:description" content="记录搭建blog的过程，暂未记录步奏，详细可见参考链接">
@@ -21,6 +21,7 @@
   
   
     <link rel="icon" href="/wolfTitle.png">
+  
   
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -241,7 +242,7 @@
 <p><a href="http://tengj.top/2016/03/06/hexo%E5%B9%B2%E8%B4%A7%E7%B3%BB%E5%88%97%EF%BC%9A%EF%BC%88%E4%B8%89%EF%BC%89hexo%E7%9A%84Jacman%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" target="_blank" rel="external">http://tengj.top/2016/03/06/ 主题自定义</a>、</p>
 <p><a href="https://wkcole.github.io/2016/02/21/Hexo%E4%B8%BB%E9%A2%98%E8%BF%9B%E9%98%B6-yilia.html" target="_blank" rel="external">https://wkcole.github.io/2016/02/21/   Hexo主题进阶-yilia</a></p>
 <p><a href="http://cthgj.me/2015/05/13/Markdown%E6%A0%BC%E5%BC%8F/" target="_blank" rel="external">http://cthgj.me/2015/05/13/Markdown%E6%A0%BC%E5%BC%8F/  markdown示例</a></p>
-<p>目前集成了多说评论，不蒜子访问统计。功能差不多了，哈哈哈<br>说个坑：hexo生成文章后，文章标签的css不对！！！请来大神分析问题，后来发现是js文件引入的问题。文章标签通过main.js动态改变的，main.js执行需要另一个min.js文件。不巧的是min.js用的是http，在github没能生效。导致样式无法正确生成。<br>解决办法：把那个min.js缓存到本地，修改配置文件，从本地引用，万事大吉！</p>
+<p>目前集成了多说评论，不蒜子访问统计。功能差不多了，哈哈哈<br>说个坑：hexo生成文章后，文章标签的css不对！！！请来大神分析问题，后来发现是js文件引入的问题。文章标签通过main.js动态改变的，main.js执行需要另一个min.js文件(<a href="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js)。不巧的是min.js用的是http，在github没能生效。导致样式无法正确生成。" target="_blank" rel="external">http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js)。不巧的是min.js用的是http，在github没能生效。导致样式无法正确生成。</a><br>解决办法：把那个min.js缓存到本地，修改配置文件，从本地引用，万事大吉！</p>
 
       
     </div>
